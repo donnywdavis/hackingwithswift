@@ -12,3 +12,7 @@ Simple game to display three flags. A random country is display in the navigatio
 controller title. Select the correct flag that corresponds to the country listed.
 An alert controller is displayed to specify the results and a label displays the
 score at the bottom of the view.
+
+## Project 3
+Copy of Project 1 to add an action button to show the share sheet for sharing the
+photo in the detail view.
