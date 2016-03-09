@@ -21,3 +21,9 @@ photo in the detail view.
 Use WKWebView to display a selected web page. Display button on the navigation
 controller to display an action sheet with a list of sites to choose from. Add a
 refresh button and a progress bar to the views tool bar.
+
+## Project 5
+Read a list of words from a file and shuffle them to select a random word. Display
+word as the navigation controllers title. Use an action button to prompt for input.
+Enter a word that can be created out of the word in the title. If the word is
+valid then add the word to the table view.
