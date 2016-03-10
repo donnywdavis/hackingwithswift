@@ -13,6 +13,7 @@
 		4127E1FC1C91CF2400AC19D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4127E1FA1C91CF2400AC19D4 /* Main.storyboard */; };
 		4127E1FE1C91CF2400AC19D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4127E1FD1C91CF2400AC19D4 /* Assets.xcassets */; };
 		4127E2011C91CF2400AC19D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4127E1FF1C91CF2400AC19D4 /* LaunchScreen.storyboard */; };
+		4127E2091C91D65B00AC19D4 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4127E2081C91D65B00AC19D4 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4127E1FD1C91CF2400AC19D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4127E2001C91CF2400AC19D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4127E2021C91CF2400AC19D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4127E2081C91D65B00AC19D4 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = "../../../../../../../Downloads/HackingWithSwift-master/project7-files/SwiftyJSON.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				4127E1F41C91CF2400AC19D4 /* AppDelegate.swift */,
 				4127E1F61C91CF2400AC19D4 /* MasterViewController.swift */,
+				4127E2081C91D65B00AC19D4 /* SwiftyJSON.swift */,
 				4127E1F81C91CF2400AC19D4 /* DetailViewController.swift */,
 				4127E1FA1C91CF2400AC19D4 /* Main.storyboard */,
 				4127E1FD1C91CF2400AC19D4 /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 				4127E1F91C91CF2400AC19D4 /* DetailViewController.swift in Sources */,
 				4127E1F71C91CF2400AC19D4 /* MasterViewController.swift in Sources */,
 				4127E1F51C91CF2400AC19D4 /* AppDelegate.swift in Sources */,
+				4127E2091C91D65B00AC19D4 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
