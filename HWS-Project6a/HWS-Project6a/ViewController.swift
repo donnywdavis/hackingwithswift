@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
-    @IBOutlet weak var scoreLabel: UILabel!
+//    @IBOutlet weak var scoreLabel: UILabel!
     
     var countries = [String]()
     var score = 0
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         button2.layer.borderColor = UIColor.lightGrayColor().CGColor
         button3.layer.borderColor = UIColor.lightGrayColor().CGColor
         
-        scoreLabel.text = "0"
+//        scoreLabel.text = "0"
         
         askQuestion()
     }
@@ -71,7 +71,7 @@ class ViewController: UIViewController {
             title = "Wrong"
             score -= 1
         }
-        scoreLabel.text = String(score)
+//        scoreLabel.text = String(score)
         
         // Display an alert with the answer
         let ac = UIAlertController(title: title, message: "Your score is \(score)", preferredStyle: .Alert)
