@@ -31,3 +31,5 @@ valid then add the word to the table view.
 ## Project 6
 a) Copy project 2 and use auto layout to control position of the flags in both
 portrait and landscape mode.
+b) Use the Visual Format Language to position some labels on the screen and adjust
+for both portrait and landscape modes.
