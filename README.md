@@ -27,3 +27,7 @@ Read a list of words from a file and shuffle them to select a random word. Displ
 word as the navigation controllers title. Use an action button to prompt for input.
 Enter a word that can be created out of the word in the title. If the word is
 valid then add the word to the table view.
+
+## Project 6
+a) Copy project 2 and use auto layout to control position of the flags in both
+portrait and landscape mode.
