@@ -33,3 +33,8 @@ a) Copy project 2 and use auto layout to control position of the flags in both
 portrait and landscape mode.
 b) Use the Visual Format Language to position some labels on the screen and adjust
 for both portrait and landscape modes.
+
+## Project 7
+Use the SwiftyJSON library to pull in data from an API. Then display the title of
+that data in a table view controller. When a table row is selected format the body
+of the JSON request in HTML to display in the detail view controller.
