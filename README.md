@@ -38,3 +38,11 @@ for both portrait and landscape modes.
 Use the SwiftyJSON library to pull in data from an API. Then display the title of
 that data in a table view controller. When a table row is selected format the body
 of the JSON request in HTML to display in the detail view controller.
+
+## Project 8
+Create a clone of 7 Little Words. Read a text file that has seven clues along
+with their answer. Split each line of the text file to make arrays for build the
+random list of buttons to select the words from. Compare the positions in the arrays
+to determine right answers and update the labels accordingly. Show and hide the
+buttons as selections are made. Use an observer for the score variable to update
+the label on the screen whenever the score variable changes.
