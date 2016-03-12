@@ -24,22 +24,25 @@ class MasterViewController: UITableViewController {
             urlString = "https://api.whitehouse.gov/v1/petitions.json?signatureCountFloor=10000&limit=100"
         }
         
-        // Get the JSON data from the url
-        if let url = NSURL(string: urlString) {
-            if let data = try? NSData(contentsOfURL: url, options: []) {
-                let json = JSON(data: data)
+        // USE GCD to fetch the JSON data in the background
+        dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0)) { [unowned self] in
+            // Get the JSON data from the url
+            if let url = NSURL(string: urlString) {
+                if let data = try? NSData(contentsOfURL: url, options: []) {
+                    let json = JSON(data: data)
                 
-                // Check that we get a valid response back
-                if json["metadata"]["responseInfo"]["status"].intValue == 200 {
-                    parseJSON(json)
+                    // Check that we get a valid response back
+                    if json["metadata"]["responseInfo"]["status"].intValue == 200 {
+                        self.parseJSON(json)
+                    } else {
+                        self.showError()
+                    }
                 } else {
-                    showError()
+                    self.showError()
                 }
             } else {
-                showError()
+                self.showError()
             }
-        } else {
-            showError()
         }
     }
 
@@ -95,13 +98,19 @@ class MasterViewController: UITableViewController {
             objects.append(obj)
         }
         
-        tableView.reloadData()
+        // Use GCD to switch back to the main queue before showing the table view
+        dispatch_async(dispatch_get_main_queue()) { [unowned self] in
+            self.tableView.reloadData()
+        }
     }
     
     func showError() {
-        let ac = UIAlertController(title: "Loading Error", message: "There was a problem loading the feed; please check your connection and try again.", preferredStyle: .Alert)
-        ac.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
-        presentViewController(ac, animated: true, completion: nil)
+        // Use GCD to switch back to the main queue to display the alert controller
+        dispatch_async(dispatch_get_main_queue()) { [unowned self] in
+            let ac = UIAlertController(title: "Loading Error", message: "There was a problem loading the feed; please check your connection     and try again.", preferredStyle: .Alert)
+            ac.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+            self.presentViewController(ac, animated: true, completion: nil)
+        }
     }
 
 

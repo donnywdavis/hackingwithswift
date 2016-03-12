@@ -46,3 +46,7 @@ random list of buttons to select the words from. Compare the positions in the ar
 to determine right answers and update the labels accordingly. Show and hide the
 buttons as selections are made. Use an observer for the score variable to update
 the label on the screen whenever the score variable changes.
+
+## Project 9
+Copy project 7 and add logic to use GCD (Grand Central Dispatch) to fetch the JSON
+data from the web instead of on the main queue.
