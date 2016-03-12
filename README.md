@@ -50,3 +50,9 @@ the label on the screen whenever the score variable changes.
 ## Project 9
 Copy project 7 and add logic to use GCD (Grand Central Dispatch) to fetch the JSON
 data from the web instead of on the main queue.
+
+## Project 10
+Use a collection view to display a grid of images with an associated name. Use an
+action button in the navigation controller to display the image picker to set an
+image for each cell added. Then tap each cell to show an alert controller to prompt
+for a name that will be added to each cell.
