@@ -14,6 +14,8 @@
 		413F28DF1C94A60A00A42421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413F28DD1C94A60A00A42421 /* Main.storyboard */; };
 		413F28E11C94A60A00A42421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413F28E01C94A60A00A42421 /* Assets.xcassets */; };
 		413F28E41C94A60A00A42421 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413F28E21C94A60A00A42421 /* LaunchScreen.storyboard */; };
+		413F28EC1C94AC7900A42421 /* FireParticles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 413F28EB1C94AC7900A42421 /* FireParticles.sks */; };
+		41E2B3A31C94ECA90021489A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E2B3A21C94ECA90021489A /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		413F28E01C94A60A00A42421 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		413F28E31C94A60A00A42421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		413F28E51C94A60A00A42421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		413F28EB1C94AC7900A42421 /* FireParticles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FireParticles.sks; sourceTree = "<group>"; };
+		41E2B3A21C94ECA90021489A /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				413F28E01C94A60A00A42421 /* Assets.xcassets */,
 				413F28E21C94A60A00A42421 /* LaunchScreen.storyboard */,
 				413F28E51C94A60A00A42421 /* Info.plist */,
+				413F28EB1C94AC7900A42421 /* FireParticles.sks */,
+				41E2B3A21C94ECA90021489A /* Helper.swift */,
 			);
 			path = "HWS-Project11";
 			sourceTree = "<group>";
@@ -131,6 +137,7 @@
 			files = (
 				413F28D81C94A60A00A42421 /* GameScene.sks in Resources */,
 				413F28E41C94A60A00A42421 /* LaunchScreen.storyboard in Resources */,
+				413F28EC1C94AC7900A42421 /* FireParticles.sks in Resources */,
 				413F28E11C94A60A00A42421 /* Assets.xcassets in Resources */,
 				413F28DF1C94A60A00A42421 /* Main.storyboard in Resources */,
 			);
@@ -146,6 +153,7 @@
 				413F28DA1C94A60A00A42421 /* GameScene.swift in Sources */,
 				413F28DC1C94A60A00A42421 /* GameViewController.swift in Sources */,
 				413F28D61C94A60A00A42421 /* AppDelegate.swift in Sources */,
+				41E2B3A31C94ECA90021489A /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +303,7 @@
 				413F28EA1C94A60A00A42421 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
