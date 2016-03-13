@@ -19,6 +19,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
         // Add an action button to the navigation bar to add a new person
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "addNewPerson")
+        
+        // Load saved data
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if let savedPeople = defaults.objectForKey("people") as? NSData {
+            people = NSKeyedUnarchiver.unarchiveObjectWithData(savedPeople) as! [Person]
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,6 +62,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let newName = ac.textFields![0]
             person.name = newName.text!
             self.collectionView.reloadData()
+            self.save()
         })
         
         presentViewController(ac, animated: true, completion: nil)
@@ -101,6 +108,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
         let documentsDirectory = paths[0]
         return documentsDirectory
+    }
+    
+    func save() {
+        let savedData = NSKeyedArchiver.archivedDataWithRootObject(people)
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject(savedData, forKey: "people")
     }
     
 }

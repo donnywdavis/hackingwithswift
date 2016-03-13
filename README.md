@@ -58,4 +58,9 @@ image for each cell added. Then tap each cell to show an alert controller to pro
 for a name that will be added to each cell.
 
 ## Project 11
-Use SpriteKit to build a Pachinko like game. 
+Use SpriteKit to build a Pachinko like game.
+
+## Project 12
+Copy project 10. Use the NSCoding protocol to encode and decode the name and image
+name. Use NSUserDefaults to save an array that can be reloaded whenever the app
+is closed and reopened.
