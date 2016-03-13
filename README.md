@@ -56,3 +56,6 @@ Use a collection view to display a grid of images with an associated name. Use a
 action button in the navigation controller to display the image picker to set an
 image for each cell added. Then tap each cell to show an alert controller to prompt
 for a name that will be added to each cell.
+
+## Project 11
+Use SpriteKit to build a Pachinko like game. 
